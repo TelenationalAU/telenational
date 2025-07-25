@@ -1,0 +1,43 @@
+Create a single-page professional landing site titled "Global Leaders in Travel, Tours & Logistics" to showcase the expertise of Rodney & Nuch Pattison. This is a legacy and advisory profile — not a sales page. The site must:
+* Focus on their experience, credibility, and trusted role in supporting the travel industry (not selling travel directly).
+* Use a warm, confident, elegant tone with clear structure and modern styling.
+Hero Section:
+* Headline: Global Leaders in Travel, Tours & Logistics
+* Subheadline: Rodney & Nuch Pattison – Trusted advisors with decades of international experience in cruise logistics, group touring, and travel operations.
+* Add a soft background image (e.g., subtle world map or cruise port).
+* Include one clear call to action: "Get in Touch" (anchor link to contact form at bottom).
+Our Professional Journey:
+* A brief bio about Rodney & Nuch as a husband-and-wife team with 30+ years each in corporate, retail, and group travel, cruise coordination, and airline experience.
+* Use icons or subtle visual dividers for each area.
+Individual Profiles:
+Rodney Pattison Travel Logistics & Operations Specialist
+* 30+ years experience in travel logistics
+* Background in major airlines
+* Co-founder of Travel Central
+* Managed cruise logistics for thousands of passengers
+* Worked with: Carnival, Cunard, Holland America, P&O, Princess, Seabourn, Silversea, Oceania, NCL, Viking, Regent, The World, Hapag-Lloyd
+Nongnuch "Nuch" Pattison Tour Operations & Cultural Specialist
+* 30+ years in travel and tourism
+* Fluent in multiple languages
+* Expert in designing escorted tours across Asia & Australia
+* Known for cultural fluency and guest service excellence
+* Worked with same cruise lines as Rodney
+Our Expertise:
+Use 6 experience blocks with icons and short descriptions:
+* 💼 Corporate Travel
+* 🏪 Retail Travel
+* 👥 Group Travel
+* ✈️ Airline Operations
+* 🗺️ Escorted Tours
+* 🚢 Cruise Logistics
+Cruise Lines We've Supported:
+* Display logos (or a clean, elegant list) of cruise lines they've worked with.
+Contact Section:
+* Heading: Get in Touch
+* Short text: Interested in learning more about how we support travel professionals and operations? We'd love to hear from you.
+* Contact form with: Name, Email, Message, and a "Send Message" button
+Footer:
+* Clean and minimal — no social links required
+* Just a note: “Proudly supporting the global travel community.”
+
+

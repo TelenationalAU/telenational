@@ -1,0 +1,98 @@
+Please add the following working Web3Forms contact form to my site using clean HTML. It should look professional, be centered on the page, and include labels and spacing between fields. Use my actual access key:
+197c8bd0-8c47-42ab-80b0-9a5dcf3b6565
+
+Also:
+
+Keep the honeypot checkbox for spam protection (botcheck)
+
+Do not show my email address in the HTML
+
+Use basic CSS to style the form with padding, max-width, and font settings
+
+Place it in the appropriate section of the page (or create a section called “Contact Us” if it doesn’t exist)
+
+If possible, show a success message after submission
+
+That prompt tells Ghostwriter exactly what to do — and uses your real access key.
+
+Once it's generated:
+
+Review the HTML it gives you
+
+Copy it into your index.html (or wherever you want the contact form to appear)
+
+Commit and push the changes to GitHub
+
+Vercel will redeploy the updated site automatically
+
+Let me know when it's done and I’ll help you test it live.
+
+
+
+
+
+
+
+Ask ChatGPT
+You said:
+https://replit.com - Free program finished how do I get the html of my website and make small changes?
+
+https://51969a38-d451-476f-881a-23b8642e3e4a-00-2uu1c1akqspdg.picard.replit.dev
+
+
+ChatGPT said:
+Thanks Rodney! Since your Replit program has finished and is deployed to a live URL like this:
+
+🔗 Your temporary Replit site
+
+You can absolutely get back in, grab the HTML, and make small edits.
+
+✅ Here’s How to Access & Edit Your HTML in Replit:
+🔧 Step 1: Open your project
+Go to https://replit.com
+
+Click your profile picture → “My Repls”
+
+Find the project with the matching name (or look for your last opened Repl)
+
+🔧 Step 2: Open the main HTML file
+Look in the left sidebar for a file named something like:
+
+diff
+Copy
+Edit
+index.html
+Or it might be inside a folder like public/ or views/.
+
+✏️ Step 3: Make small changes
+Edit anything you like — examples:
+
+Add or remove text
+
+Add styling
+
+Paste in your Web3Forms contact form
+
+💾 Step 4: Save and Preview
+Click the “Run” button (top center)
+
+Click the "Open in a new tab" icon or use the new preview URL
+
+🚀 Step 5 (Optional): Push to GitHub and redeploy to Vercel
+If this version is better, you can:
+
+Commit and push the changes to GitHub
+
+Let Vercel redeploy the updated version to telenational.com.au
+
+If you tell me exactly what you want to change (e.g. add a section, fix a button, swap an image), I can write the updated HTML for you here — ready to paste into Replit.
+
+Want to do that?
+
+
+
+
+
+
+
+

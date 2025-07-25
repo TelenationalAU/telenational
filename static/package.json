@@ -1,0 +1,19 @@
+{
+  "name": "travel-leaders-static",
+  "version": "1.0.0",
+  "description": "Static website for Rodney & Nuch Pattison - Global Leaders in Travel, Tours & Logistics",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "travel",
+    "cruise",
+    "logistics",
+    "tours",
+    "static-website"
+  ],
+  "author": "Rodney & Nuch Pattison",
+  "license": "Private"
+}
