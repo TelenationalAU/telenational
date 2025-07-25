@@ -188,9 +188,12 @@ static/
 
 ## Recent Changes
 
-### Experience Calculator Removal (July 25, 2025)
+### Experience Calculator Removal & Affiliate Links Update (July 25, 2025)
 - **Interactive Calculator Removed**: Completely removed the experience calculator section from HTML, JavaScript, and associated styling
 - **Experience Summary Added**: Replaced calculator with a streamlined experience summary section highlighting the Pattisons' combined expertise
+- **Affiliate Links Updated**: Updated all Trusted Travel Partners links to use correct affiliate URLs:
+  - Trip.com, Welcome Pickups, Yesim, EKTA, Kiwitaxi, Airalo, GetRentacar.com using tpk.mx tracking
+  - Surfshark VPN and Surfshark One using direct affiliate links
 - **Clean User Journey**: Site now follows a more direct path from hero section to experience overview to individual profiles
 - **Code Optimization**: Removed all calculator-related JavaScript functions and CSS styles to improve page performance
 - **Documentation Updated**: Updated all project documentation to reflect the simplified, more professional site structure
