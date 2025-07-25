@@ -132,7 +132,7 @@ export default function Home() {
       {/* Partners Bar */}
       <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-white py-3 px-6 border-b border-gold/20">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
+          <div className="affiliate-row flex justify-between items-center gap-4 text-sm overflow-x-auto" style={{flexWrap: 'nowrap'}}>
             <div className="flex items-center gap-2">
               <Handshake className="w-4 h-4 text-gold" />
               <span className="font-semibold text-gold">Our Trusted Partners:</span>
