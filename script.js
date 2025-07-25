@@ -2,99 +2,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     lucide.createIcons();
     
-    // Initialize expertise calculator
-    initializeExpertiseCalculator();
-    
     // Initialize contact form
     initializeContactForm();
     
     // Initialize scroll animations
     initializeScrollAnimations();
 });
-
-// Expertise Calculator Functionality
-function initializeExpertiseCalculator() {
-    const expertiseItems = document.querySelectorAll('.expertise-item');
-    const totalYearsElement = document.querySelector('.total-years');
-    const selectionDetails = document.querySelector('.selection-details');
-    const emptyState = document.querySelector('.empty-state');
-    const countNumber = document.querySelector('.count-number');
-    const breakdownList = document.querySelector('.breakdown-list');
-    
-    let selectedExpertise = {};
-    
-    const expertiseData = {
-        corporate: { years: 30, label: "Corporate Travel", description: "Strategic corporate travel management" },
-        retail: { years: 25, label: "Retail Travel", description: "Consumer-focused travel services" },
-        group: { years: 28, label: "Group Travel", description: "Large-scale group coordination" },
-        airline: { years: 20, label: "Airline Operations", description: "Deep airline industry knowledge" },
-        tours: { years: 22, label: "Escorted Tours", description: "Guided tour operations with cultural expertise" },
-        cruise: { years: 35, label: "Cruise Logistics", description: "Comprehensive cruise operations management" }
-    };
-    
-    expertiseItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const area = this.dataset.area;
-            const years = parseInt(this.dataset.years);
-            
-            // Toggle selection
-            if (selectedExpertise[area]) {
-                delete selectedExpertise[area];
-                this.classList.remove('selected');
-            } else {
-                selectedExpertise[area] = years;
-                this.classList.add('selected');
-            }
-            
-            updateCalculatorDisplay();
-        });
-    });
-    
-    function updateCalculatorDisplay() {
-        const totalYears = Object.values(selectedExpertise).reduce((sum, years) => sum + years, 0);
-        const selectedCount = Object.keys(selectedExpertise).length;
-        
-        // Update total years with animation
-        totalYearsElement.style.transform = 'scale(0.8)';
-        totalYearsElement.style.opacity = '0';
-        
-        setTimeout(() => {
-            totalYearsElement.textContent = totalYears;
-            totalYearsElement.style.transform = 'scale(1)';
-            totalYearsElement.style.opacity = '1';
-        }, 150);
-        
-        // Update count
-        countNumber.textContent = selectedCount;
-        
-        // Update breakdown
-        breakdownList.innerHTML = '';
-        Object.entries(selectedExpertise).forEach(([area, years]) => {
-            const item = document.createElement('div');
-            item.className = 'breakdown-item';
-            
-            const labelSpan = document.createElement('span');
-            labelSpan.textContent = expertiseData[area].label;
-            
-            const yearsSpan = document.createElement('span');
-            yearsSpan.className = 'breakdown-years';
-            yearsSpan.textContent = `${years} years`;
-            
-            item.appendChild(labelSpan);
-            item.appendChild(yearsSpan);
-            breakdownList.appendChild(item);
-        });
-        
-        // Show/hide sections
-        if (totalYears > 0) {
-            selectionDetails.classList.remove('hidden');
-            emptyState.style.display = 'none';
-        } else {
-            selectionDetails.classList.add('hidden');
-            emptyState.style.display = 'block';
-        }
-    }
-}
 
 // Contact Form Functionality with Web3Forms
 function initializeContactForm() {

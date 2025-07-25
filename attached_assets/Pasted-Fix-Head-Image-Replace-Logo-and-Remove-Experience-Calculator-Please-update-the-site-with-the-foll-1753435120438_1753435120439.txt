@@ -1,0 +1,52 @@
+Fix Head Image, Replace Logo, and Remove Experience Calculator
+
+Please update the site with the following three changes:
+
+1. ✅ Fix the Headshot Image Cropping
+Goal: Make sure Rodney Pattison’s head fits nicely within the card and is not cropped off.
+
+Adjust the image or container so the headshot is centered and fully visible.
+
+Ideal solution: Set the image to object-contain or adjust height/positioning.
+
+If necessary, scale down or add padding/margin so it looks clean and professional across desktop and mobile.
+
+2. ❌ Remove the Experience Calculator
+Goal: The "Experience Calculator" feature should be removed completely.
+
+Delete or comment out the entire Experience Calculator section, including the header, checkboxes, and cumulative experience box.
+
+Replace it with a simple professional summary of Rodney’s travel industry experience.
+
+💡 Suggested replacement content:
+
+html
+Copy
+Edit
+<section class="experience-summary">
+  <h2 class="text-2xl font-bold text-center mb-4">Travel Industry Expertise</h2>
+  <p class="text-center max-w-2xl mx-auto">
+    With over 30 years in the travel industry, Rodney has worked across multiple sectors, including:
+    Corporate Travel (30 years), Retail Travel (25 years), Group Travel (28 years), Airline Operations (20 years),
+    Escorted Tours (22 years), and Cruise Logistics (35 years).
+    His combined experience makes him one of Australia’s most trusted travel specialists.
+  </p>
+</section>
+3. 🧼 Replace the Loveable Heart Logo
+Goal: Replace the heart-shaped "Lovable" logo in the top-left nav bar.
+
+Swap the current logo with a more appropriate one, e.g. a clean Telenational text logo or a generic travel icon.
+
+Suggested fallback: just replace the logo with the word "Telenational" in the nav bar (white or navy text).
+
+Bonus: Let me know if you want a custom logo created later.
+
+Final Step: Commit the changes and deploy.
+
+bash
+Copy
+Edit
+cd ~/workspace
+git add .
+git commit -m "UI cleanup: fix profile image crop, remove experience calculator, update logo"
+git push origin main

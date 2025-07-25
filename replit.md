@@ -144,7 +144,7 @@ Successfully converted the React-based application to a static HTML/CSS/JS websi
 
 ### Static Website Features
 - **Pure HTML/CSS/JS**: No framework dependencies, fully self-contained
-- **Interactive Expertise Calculator**: JavaScript-powered with same functionality as React version
+- **Experience Summary Section**: Comprehensive overview highlighting decades of combined travel industry expertise
 - **Responsive Design**: Mobile-first approach with professional styling
 - **SEO Optimized**: Proper meta tags, Open Graph tags, and semantic HTML structure
 - **Performance Optimized**: Minified code, cached assets, and CDN resources
@@ -186,7 +186,16 @@ static/
 - **High Reliability**: No backend dependencies or server maintenance
 - **Easy Updates**: Direct file editing for content changes
 
-## Recent Changes (July 25, 2025)
+## Recent Changes
+
+### Experience Calculator Removal (July 25, 2025)
+- **Interactive Calculator Removed**: Completely removed the experience calculator section from HTML, JavaScript, and associated styling
+- **Experience Summary Added**: Replaced calculator with a streamlined experience summary section highlighting the Pattisons' combined expertise
+- **Clean User Journey**: Site now follows a more direct path from hero section to experience overview to individual profiles
+- **Code Optimization**: Removed all calculator-related JavaScript functions and CSS styles to improve page performance
+- **Documentation Updated**: Updated all project documentation to reflect the simplified, more professional site structure
+
+### Previous Updates (July 25, 2025)
 
 ### UI/UX Improvements
 - **Modernized Icons**: Updated expertise section with colorful gradient icons (blue, green, purple, indigo, orange, teal) instead of monochrome versions
@@ -207,8 +216,8 @@ static/
 - **Color Psychology**: Each expertise area now has distinct color branding to improve visual hierarchy and memorability
 - **Consistent Styling**: Maintained professional navy/gold color scheme while adding modern gradient elements
 - **Enhanced Visual Hierarchy**: Improved spacing and alignment throughout expertise and cruise lines sections
-- **Interactive Expertise Calculator**: New engaging section allowing visitors to explore cumulative experience across different travel sectors
-  - Clickable expertise areas with real-time calculation
-  - Animated results display with spring transitions
-  - Sticky sidebar showing selected areas and total years
-  - Professional data presentation with visual feedback
+- **Experience Summary Section**: Professional overview highlighting the Pattisons' combined decades of expertise
+  - Comprehensive narrative covering all major travel industry sectors
+  - Clean, focused presentation emphasizing credibility and industry knowledge
+  - Strategic positioning between hero section and individual profiles
+  - Streamlined user experience leading directly to team introductions
