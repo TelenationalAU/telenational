@@ -141,8 +141,24 @@ function initializeScrollAnimations() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.journey-card, .expertise-card, .profile-card, .cruise-logo');
+    const animateElements = document.querySelectorAll('.journey-card, .profile-card, .cruise-logo');
     animateElements.forEach(el => observer.observe(el));
+    
+    // Handle expertise cards with staggered animation
+    const expertiseCards = document.querySelectorAll('.expertise-card');
+    expertiseCards.forEach((card, index) => {
+        const expertiseObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('animate-fadeInUp');
+                    }, index * 100);
+                    expertiseObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        expertiseObserver.observe(card);
+    });
 }
 
 // Smooth scroll for anchor links

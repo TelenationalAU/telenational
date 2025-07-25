@@ -188,15 +188,19 @@ static/
 
 ## Recent Changes
 
-### Experience Calculator Removal & Affiliate Links Update (July 25, 2025)
-- **Interactive Calculator Removed**: Completely removed the experience calculator section from HTML, JavaScript, and associated styling
-- **Experience Summary Added**: Replaced calculator with a streamlined experience summary section highlighting the Pattisons' combined expertise
+### World-Class Expertise Section & Affiliate Links Update (July 25, 2025)
+- **World-Class Expertise Section**: Built new professional expertise showcase replacing the experience calculator
+  - Six pillar approach covering Corporate Travel, Retail Travel, Group Travel, Airline Operations, Escorted Tours, and Cruise Logistics
+  - Clean, minimal card design with 24px Lucide icons and elevation-1 styling
+  - Responsive 2-column grid on desktop, single column on mobile
+  - Staggered fade-up animations on scroll with 100ms delays between cards
+  - Professional typography with gradient underline accent
 - **Affiliate Links Updated**: Updated all Trusted Travel Partners links to use correct affiliate URLs:
   - Trip.com, Welcome Pickups, Yesim, EKTA, Kiwitaxi, Airalo, GetRentacar.com using tpk.mx tracking
   - Surfshark VPN and Surfshark One using direct affiliate links
-- **Clean User Journey**: Site now follows a more direct path from hero section to experience overview to individual profiles
-- **Code Optimization**: Removed all calculator-related JavaScript functions and CSS styles to improve page performance
-- **Documentation Updated**: Updated all project documentation to reflect the simplified, more professional site structure
+- **Enhanced Credibility**: New section conveys decades of leadership expertise without gimmicks or counters
+- **SEO Optimization**: Semantic HTML structure with proper heading hierarchy and aria-labelledby attributes
+- **Performance Optimized**: Clean CSS Grid implementation with optimized animations and transitions
 
 ### Previous Updates (July 25, 2025)
 

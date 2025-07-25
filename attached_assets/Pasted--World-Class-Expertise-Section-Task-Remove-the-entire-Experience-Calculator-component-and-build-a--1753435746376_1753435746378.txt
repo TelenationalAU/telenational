@@ -1,0 +1,42 @@
+“World-Class Expertise Section”
+Task: Remove the entire Experience Calculator component and build a new “Our Expertise” section that conveys credibility at a glance — no counters, no gimmicks, no emojis.
+
+1. Content & Tone
+Headline:
+
+nginx
+Copy
+Edit
+Our Expertise
+Intro Sentence (h4 style):
+
+“Decades of hands-on leadership across every major sector of the travel industry.”
+
+Six Pillars (ordered list, no years, no emojis):
+
+Pillar	Description (max 15 words)
+Corporate Travel	Strategic programme design and cost-optimised, enterprise-grade travel management.
+Retail Travel	High-touch consumer service and frontline retail expertise.
+Group Travel	Seamless logistics for incentive groups, conferences, and large-scale movements.
+Airline Operations	Deep operational know-how spanning ground handling, IROP response, and network planning support.
+Escorted Tours	Culturally rich, end-to-end guided tour design and execution.
+Cruise Logistics	Complete cruise-turnaround solutions, port agency liaison, and passenger movement control.
+
+2. Design Guidelines
+Element	Spec
+Layout	Responsive CSS Grid (Tailwind): 2-column on desktop (grid-cols-2 gap-8), single column on mobile.
+Card Style	Minimal “elevation-1” card: rounded-2xl shadow-md bg-white p-6 hover:shadow-lg transition.
+Iconography	Replace emojis with subtle 24 px line-icons (lucide-react) positioned top-left inside each card.
+Typography	Heading: text-3xl font-semibold text-center text-primary-900. Body: text-gray-600 leading-relaxed.
+Accent	Thin 4 px gradient underline under headline (from-primary-200 to-primary-500, width 64 px, centered).
+Animation	On scroll, fade-up each card (opacity-0 translate-y-4 → opacity-100 translate-y-0 via tailwind & IntersectionObserver).
+Spacing	Section padding: py-16 md:py-24. Grid gap: gap-8 md:gap-12.
+Background	Very light neutral (#F9FAFB) section background to visually separate from previous content.
+
+3. Accessibility / SEO
+Use semantic <section> with aria-labelledby="expertise-title".
+
+Each pillar headline in an <h3> (within cards) for proper hierarchy.
+
+Descriptions concise, active-voice, <160 characters for snippet friendliness.
+
