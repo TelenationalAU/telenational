@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "echo 'Static site - no build needed'",
-  "outputDirectory": "./",
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "functions": {},
   "routes": [
     {
       "src": "/assets/(.*)",
@@ -55,20 +50,5 @@
         }
       ]
     }
-  ],
-  "ignore": [
-    "node_modules/**",
-    "server/**",
-    "client/**",
-    "shared/**",
-    "static/**",
-    "attached_assets/**",
-    "*.ts",
-    "*.tsx",
-    "tsconfig.json",
-    "vite.config.ts",
-    "tailwind.config.ts",
-    "drizzle.config.ts",
-    "package-lock.json"
   ]
 }
