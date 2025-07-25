@@ -412,72 +412,58 @@ export default function Home() {
           >
             {/* Rodney Profile */}
             <motion.div 
-              className="bg-gradient-to-br from-navy/5 to-soft-blue/5 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
               variants={fadeInUp}
             >
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+              <div className="flex flex-col items-center text-center">
                 <img 
                   src={rodneyPhoto} 
-                  alt="Rodney Pattison - Travel Logistics & Operations Specialist" 
-                  className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg" 
+                  alt="Rodney Pattison" 
+                  className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg mb-6" 
                 />
-                <div className="text-center md:text-left">
+                <div>
                   <h3 className="font-serif text-2xl font-bold text-navy mb-2">Rodney Pattison</h3>
-                  <p className="text-gold font-semibold mb-4">Travel Logistics & Operations Specialist</p>
-                  <ul className="text-gray-700 space-y-2">
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      30+ years experience in travel logistics
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      Background in major airlines
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      Co-founder of Travel Central
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      Managed cruise logistics for thousands
-                    </li>
-                  </ul>
+                  <p className="text-gold font-semibold mb-4">Senior Travel Advisor & Operations Specialist</p>
+                  <div className="flex justify-center gap-2 mb-4">
+                    <span className="bg-navy text-white text-sm px-3 py-1 rounded-full font-medium">English</span>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    With over 30 years in the travel industry, Rodney brings extensive experience in corporate travel management, cruise operations, and international logistics. His deep understanding of global travel networks and operational excellence has made him a trusted advisor to major cruise lines and travel organizations worldwide.
+                  </p>
+                  <div className="border-t-2 border-gray-200 pt-6">
+                    <h4 className="text-lg font-semibold text-navy mb-3 flex items-center justify-center gap-2">
+                      🎤 Extra Talents
+                    </h4>
+                    <p className="text-gray-600">
+                      <strong className="text-navy">Emcee | Stand-up Comedian | Comedy Hypnotist</strong><br />
+                      Rodney energises conferences and cruise sail-aways with interactive comedy, professional MC work, and crowd-friendly hypnosis shows.
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>
 
             {/* Nuch Profile */}
             <motion.div 
-              className="bg-gradient-to-br from-gold/5 to-cream/20 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
               variants={fadeInUp}
             >
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+              <div className="flex flex-col items-center text-center">
                 <img 
                   src={nuchPhoto} 
-                  alt="Nongnuch 'Nuch' Pattison - Tour Operations & Cultural Specialist" 
-                  className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg" 
+                  alt="Nuch Pattison" 
+                  className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg mb-6" 
                 />
-                <div className="text-center md:text-left">
-                  <h3 className="font-serif text-2xl font-bold text-navy mb-2">Nongnuch "Nuch" Pattison</h3>
-                  <p className="text-gold font-semibold mb-4">Tour Operations & Cultural Specialist</p>
-                  <ul className="text-gray-700 space-y-2">
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      30+ years in travel and tourism
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      Fluent in English and Thai
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      Expert in Asian & Australian tours
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-gold w-4 h-4 mr-2 flex-shrink-0" />
-                      Cultural fluency and service excellence
-                    </li>
-                  </ul>
+                <div>
+                  <h3 className="font-serif text-2xl font-bold text-navy mb-2">Nuch Pattison</h3>
+                  <p className="text-gold font-semibold mb-4">International Travel Consultant & Cultural Liaison</p>
+                  <div className="flex justify-center gap-2 mb-4">
+                    <span className="bg-navy text-white text-sm px-3 py-1 rounded-full font-medium">English</span>
+                    <span className="bg-navy text-white text-sm px-3 py-1 rounded-full font-medium">Thai</span>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed">
+                    Nuch's 30+ years of experience spans retail travel operations, group tour coordination, and cultural consulting. Her multilingual capabilities and deep understanding of Asian markets have been instrumental in developing successful international travel programs and fostering cross-cultural business relationships.
+                  </p>
                 </div>
               </div>
             </motion.div>
