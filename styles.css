@@ -191,15 +191,13 @@ img {
   box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
 }
 
-/* Single Row Affiliate Layout */
+/* Flexible Affiliate Layout */
 .affiliate-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .affiliate-item {
