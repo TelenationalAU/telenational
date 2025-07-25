@@ -1052,15 +1052,7 @@ img {
   
   .expertise-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .calculator-grid {
     gap: 2rem;
-  }
-  
-  .results-panel {
-    position: static;
-    margin-top: 2rem;
   }
   
   .contact-form-container {

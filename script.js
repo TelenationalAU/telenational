@@ -206,20 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add hover effects for expertise calculator
-document.addEventListener('DOMContentLoaded', function() {
-    const expertiseItems = document.querySelectorAll('.expertise-item');
-    
-    expertiseItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px) scale(1.02)';
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-});
+
 
 // Add ripple effect to buttons
 function addRippleEffect(button) {
