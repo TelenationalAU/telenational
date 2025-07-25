@@ -1,32 +1,29 @@
-# Ignore backend/development files
-node_modules/
-server/
-client/
-shared/
-static/
-attached_assets/
+# Ignore all backend and development files
+node_modules
+server
+client
+shared
+static
+attached_assets
 
-# Ignore TypeScript config files
+# Ignore all TypeScript and config files
 *.ts
 *.tsx
 tsconfig.json
 vite.config.ts
 tailwind.config.ts
 drizzle.config.ts
-
-# Ignore development configs
-package-lock.json
 postcss.config.js
 components.json
+package-lock.json
 
-# Ignore documentation that's not needed for deployment
+# Ignore documentation
 replit.md
-*.md
-!README.md
 
-# Keep only the static website files at root:
+# Deploy only these static files:
 # - index.html
-# - styles.css  
+# - styles.css
 # - script.js
 # - assets/
 # - vercel.json
+# - README.md

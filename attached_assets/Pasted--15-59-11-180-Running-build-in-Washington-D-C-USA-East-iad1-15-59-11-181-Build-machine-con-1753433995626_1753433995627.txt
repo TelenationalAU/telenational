@@ -1,0 +1,63 @@
+[15:59:11.180] Running build in Washington, D.C., USA (East) – iad1
+[15:59:11.181] Build machine configuration: 2 cores, 8 GB
+[15:59:11.213] Cloning github.com/TelenationalAU/telenational (Branch: main, Commit: e956c6d)
+[15:59:11.795] Cloning completed: 582.000ms
+[15:59:11.882] Found .vercelignore
+[15:59:11.900] Removed 137 ignored files defined in .vercelignore
+[15:59:11.900]   /attached_assets/AZAMARA_1753414915225.png
+[15:59:11.900]   /attached_assets/AZAMARA_1753415316391.png
+[15:59:11.900]   /attached_assets/CARNIVAL_1753414915234.png
+[15:59:11.901]   /attached_assets/CARNIVAL_1753415316398.png
+[15:59:11.901]   /attached_assets/CRYSTAL_1753414915234.png
+[15:59:11.901]   /attached_assets/CRYSTAL_1753415316398.png
+[15:59:11.901]   /attached_assets/CUNARD_1753414915234.png
+[15:59:11.901]   /attached_assets/CUNARD_1753415316398.png
+[15:59:11.901]   /attached_assets/HERO IMAGE1_1753414915234.jpg
+[15:59:11.902]   /attached_assets/HERO IMAGE1_1753415316398.jpg
+[15:59:12.429] Restored build cache from previous deployment (CXDYEi9kDpq63tU7bAK2dn4edbS1)
+[15:59:14.686] Running "vercel build"
+[15:59:15.163] Vercel CLI 44.5.0
+[15:59:15.891] Installing dependencies...
+[15:59:17.381] 
+[15:59:17.383] up to date in 1s
+[15:59:17.383] 
+[15:59:17.384] 64 packages are looking for funding
+[15:59:17.384]   run `npm fund` for details
+[15:59:17.418] Running "npm run build"
+[15:59:17.531] 
+[15:59:17.532] > rest-express@1.0.0 build
+[15:59:17.533] > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+[15:59:17.534] 
+[15:59:17.776] [36mvite v5.4.19 [32mbuilding for production...[36m[39m
+[15:59:17.863] <script src="script.js"> in "/index.html" can't be bundled without type="module" attribute
+[15:59:17.889] transforming...
+[15:59:17.944] [32m✓[39m 2 modules transformed.
+[15:59:18.000] rendering chunks...
+[15:59:18.011] computing gzip size...
+[15:59:18.018] [2mdist/[22m[2massets/[22m[32mP_O UK_1753415316399-CctFH3f9.jpeg           [39m[1m[2m    4.16 kB[22m[1m[22m
+[15:59:18.019] [2mdist/[22m[2massets/[22m[32mSILVERSEA_1753415316400-C_rzM8mi.png         [39m[1m[2m    5.09 kB[22m[1m[22m
+[15:59:18.019] [2mdist/[22m[2massets/[22m[32mVIKING_1753415316400-E7F2YS9K.png            [39m[1m[2m    6.40 kB[22m[1m[22m
+[15:59:18.020] [2mdist/[22m[2massets/[22m[32mCRYSTAL_1753415316398-D9aPvEl7.png           [39m[1m[2m    6.88 kB[22m[1m[22m
+[15:59:18.020] [2mdist/[22m[2massets/[22m[32mAZAMARA_1753415316391-cBIwRSZ9.png           [39m[1m[2m    7.68 kB[22m[1m[22m
+[15:59:18.021] [2mdist/[22m[2massets/[22m[32mCUNARD_1753415316398-D_mR3_Oj.png            [39m[1m[2m    9.35 kB[22m[1m[22m
+[15:59:18.021] [2mdist/[22m[2massets/[22m[32mCARNIVAL_1753415316398-CHE2vyUx.png          [39m[1m[2m    9.62 kB[22m[1m[22m
+[15:59:18.021] [2mdist/[22m[2massets/[22m[32mOCEANIA CRUISES_1753415316399-DGa9KDyA.png   [39m[1m[2m   10.46 kB[22m[1m[22m
+[15:59:18.022] [2mdist/[22m[2massets/[22m[32mNORWEGIAN_1753415316399-CeHLSAUP.png         [39m[1m[2m   13.22 kB[22m[1m[22m
+[15:59:18.022] [2mdist/[22m[2massets/[22m[32mSEABOURN_1753415316400-DSHjQTpp.png          [39m[1m[2m   16.16 kB[22m[1m[22m
+[15:59:18.022] [2mdist/[22m[2massets/[22m[32mHOLLAND AMERICA_1753415316399-Bh8raOis.png   [39m[1m[2m   16.40 kB[22m[1m[22m
+[15:59:18.023] [2mdist/[22m[2massets/[22m[32mREGENT CRUISES_1753415316399-DKe8TtTt.png    [39m[1m[2m   21.96 kB[22m[1m[22m
+[15:59:18.023] [2mdist/[22m[32mindex.html                                          [39m[1m[2m   27.19 kB[22m[1m[22m[2m │ gzip: 4.89 kB[22m
+[15:59:18.023] [2mdist/[22m[2massets/[22m[32mPRINCESS CRUISES_1753415316399-BU6rzJuy.png  [39m[1m[2m   31.64 kB[22m[1m[22m
+[15:59:18.026] [2mdist/[22m[2massets/[22m[32mP_O AUSTRALIA_1753415316399-UD6K4LDv.jpg     [39m[1m[2m   49.14 kB[22m[1m[22m
+[15:59:18.027] [2mdist/[22m[2massets/[22m[32mHERO IMAGE1_1753415316398-oR6Fp0NW.jpg       [39m[1m[2m  246.93 kB[22m[1m[22m
+[15:59:18.027] [2mdist/[22m[2massets/[22m[32mRODNEY_1753415316399-CRBWMJWI.png            [39m[1m[2m  574.01 kB[22m[1m[22m
+[15:59:18.027] [2mdist/[22m[2massets/[22m[32mHERO IMAGE2_1753415316399-943mGOH_.jpg       [39m[1m[2m  701.41 kB[22m[1m[22m
+[15:59:18.027] [2mdist/[22m[2massets/[22m[32mNUCH_1753415316399-BEI0IBmu.png              [39m[1m[2m1,388.96 kB[22m[1m[22m
+[15:59:18.028] [2mdist/[22m[2massets/[22m[35mindex-yk1fLeDp.css                           [39m[1m[2m   13.65 kB[22m[1m[22m[2m │ gzip: 3.19 kB[22m
+[15:59:18.028] [32m✓ built in 215ms[39m
+[15:59:18.057] ✘ [ERROR] The entry point "server/index.ts" cannot be marked as external
+[15:59:18.058] 
+[15:59:18.064] 1 error
+[15:59:18.075] Error: Command "npm run build" exited with 1
+[15:59:18.290] 
+[15:59:21.183] Exiting build container
