@@ -12,10 +12,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { 
   Briefcase, 
-  Store, 
+  ShoppingBag,
   Users, 
   Plane, 
-  MapPin, 
+  Map, 
   Ship, 
   Handshake, 
   Globe, 
@@ -28,10 +28,7 @@ import {
   Shield,
   Building,
   Ticket,
-  Smartphone,
-  Calendar,
-  TrendingUp,
-  Target
+  Smartphone
 } from "lucide-react";
 
 // Import cruise line logos
@@ -59,15 +56,7 @@ import heroImage2 from "@assets/HERO IMAGE2_1753415316399.jpg";
 export default function Home() {
   const { toast } = useToast();
   const [isVisible, setIsVisible] = useState({});
-  const [selectedExpertise, setSelectedExpertise] = useState({
-    corporate: false,
-    retail: false,
-    group: false,
-    airline: false,
-    tours: false,
-    cruise: false
-  });
-  const [calculatedExperience, setCalculatedExperience] = useState(0);
+
 
   const form = useForm<InsertContact>({
     resolver: zodResolver(insertContactSchema),
@@ -107,26 +96,7 @@ export default function Home() {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const expertiseData = {
-    corporate: { years: 30, label: "Corporate Travel", description: "Strategic corporate travel management" },
-    retail: { years: 25, label: "Retail Travel", description: "Consumer-focused travel services" },
-    group: { years: 28, label: "Group Travel", description: "Large-scale group coordination" },
-    airline: { years: 20, label: "Airline Operations", description: "Deep airline industry knowledge" },
-    tours: { years: 22, label: "Escorted Tours", description: "Guided tour operations with cultural expertise" },
-    cruise: { years: 35, label: "Cruise Logistics", description: "Comprehensive cruise operations management" }
-  };
 
-  const handleExpertiseToggle = (area) => {
-    const newSelection = { ...selectedExpertise, [area]: !selectedExpertise[area] };
-    setSelectedExpertise(newSelection);
-    
-    // Calculate total experience based on selected areas
-    const totalYears = Object.keys(newSelection)
-      .filter(key => newSelection[key])
-      .reduce((sum, key) => sum + expertiseData[key].years, 0);
-    
-    setCalculatedExperience(totalYears);
-  };
 
   useEffect(() => {
     document.title = "Global Leaders in Travel, Tours & Logistics - Rodney & Nuch Pattison";
@@ -326,8 +296,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Interactive Expertise Calculator */}
-      <section id="expertise-calculator" className="py-20 bg-white">
+      {/* World-Class Expertise Section */}
+      <section id="expertise" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div 
             className="text-center mb-16"
@@ -336,125 +306,86 @@ export default function Home() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy mb-6">Experience Calculator</h2>
-            <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Explore our combined decades of expertise across different travel industry sectors. Select areas below to see our cumulative experience.
-            </p>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy mb-6">Our Expertise</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-gold to-navy mx-auto mb-8"></div>
+            <h4 className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Decades of hands-on leadership across every major sector of the travel industry.
+            </h4>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Interactive Selection */}
+          <motion.div 
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerChildren}
+          >
             <motion.div 
-              className="space-y-4"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerChildren}
-            >
-              <h3 className="text-2xl font-semibold text-navy mb-6">Select Expertise Areas:</h3>
-              
-              {Object.entries(expertiseData).map(([key, data]) => (
-                <motion.div
-                  key={key}
-                  className={`p-4 border-2 rounded-lg cursor-pointer transition-all duration-300 ${
-                    selectedExpertise[key] 
-                      ? 'border-gold bg-gold/10 shadow-lg' 
-                      : 'border-gray-200 hover:border-gold/50 hover:shadow-md'
-                  }`}
-                  variants={fadeInUp}
-                  onClick={() => handleExpertiseToggle(key)}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-6 h-6 rounded border-2 flex items-center justify-center ${
-                        selectedExpertise[key] ? 'border-gold bg-gold' : 'border-gray-300'
-                      }`}>
-                        {selectedExpertise[key] && <CheckCircle className="w-4 h-4 text-white" />}
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-lg">{data.label}</h4>
-                        <p className="text-sm text-gray-600">{data.description}</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-2xl font-bold text-navy">{data.years}</div>
-                      <div className="text-xs text-gray-500">years</div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* Results Display */}
-            <motion.div 
-              className="bg-gradient-to-br from-navy to-soft-blue rounded-2xl p-8 text-white sticky top-8"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
+              className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               variants={fadeInUp}
             >
-              <div className="text-center">
-                <Calendar className="w-12 h-12 text-gold mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold mb-6">Cumulative Experience</h3>
-                
-                <motion.div 
-                  className="text-6xl md:text-7xl font-bold text-gold mb-4"
-                  key={calculatedExperience}
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ duration: 0.5, type: "spring" }}
-                >
-                  {calculatedExperience}
-                </motion.div>
-                
-                <div className="text-xl mb-6">Years of Combined Expertise</div>
-                
-                {calculatedExperience > 0 && (
-                  <motion.div 
-                    className="space-y-3"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
-                  >
-                    <div className="flex items-center justify-center gap-2 text-sm">
-                      <TrendingUp className="w-4 h-4 text-gold" />
-                      <span>Selected {Object.values(selectedExpertise).filter(Boolean).length} expertise areas</span>
-                    </div>
-                    
-                    <div className="bg-white/10 rounded-lg p-4 mt-6">
-                      <h4 className="font-semibold mb-2">Your Selection Includes:</h4>
-                      <div className="text-sm space-y-1">
-                        {Object.entries(selectedExpertise)
-                          .filter(([_, selected]) => selected)
-                          .map(([key, _]) => (
-                            <div key={key} className="flex justify-between">
-                              <span>{expertiseData[key].label}</span>
-                              <span className="text-gold font-semibold">{expertiseData[key].years} years</span>
-                            </div>
-                          ))}
-                      </div>
-                    </div>
-                    
-                    <div className="bg-gold/20 rounded-lg p-3 mt-4">
-                      <div className="flex items-center justify-center gap-2 text-sm">
-                        <Target className="w-4 h-4" />
-                        <span>This represents decades of hands-on industry experience</span>
-                      </div>
-                    </div>
-                  </motion.div>
-                )}
-                
-                {calculatedExperience === 0 && (
-                  <div className="text-white/70 text-sm">
-                    Select expertise areas to see our cumulative experience
-                  </div>
-                )}
+              <div className="w-12 h-12 text-navy mx-auto mb-6">
+                <Briefcase className="w-12 h-12" />
               </div>
+              <h3 className="text-xl font-semibold text-navy mb-4">Corporate Travel</h3>
+              <p className="text-gray-600 leading-relaxed">Strategic programme design and cost-optimised, enterprise-grade travel management.</p>
             </motion.div>
-          </div>
+
+            <motion.div 
+              className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              variants={fadeInUp}
+            >
+              <div className="w-12 h-12 text-navy mx-auto mb-6">
+                <ShoppingBag className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy mb-4">Retail Travel</h3>
+              <p className="text-gray-600 leading-relaxed">High-touch consumer service and frontline retail expertise.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              variants={fadeInUp}
+            >
+              <div className="w-12 h-12 text-navy mx-auto mb-6">
+                <Users className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy mb-4">Group Travel</h3>
+              <p className="text-gray-600 leading-relaxed">Seamless logistics for incentive groups, conferences, and large-scale movements.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              variants={fadeInUp}
+            >
+              <div className="w-12 h-12 text-navy mx-auto mb-6">
+                <Plane className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy mb-4">Airline Operations</h3>
+              <p className="text-gray-600 leading-relaxed">Deep operational know-how spanning ground handling, IROP response, and network planning support.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              variants={fadeInUp}
+            >
+              <div className="w-12 h-12 text-navy mx-auto mb-6">
+                <Map className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy mb-4">Escorted Tours</h3>
+              <p className="text-gray-600 leading-relaxed">Culturally rich, end-to-end guided tour design and execution.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              variants={fadeInUp}
+            >
+              <div className="w-12 h-12 text-navy mx-auto mb-6">
+                <Ship className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy mb-4">Cruise Logistics</h3>
+              <p className="text-gray-600 leading-relaxed">Complete cruise-turnaround solutions, port agency liaison, and passenger movement control.</p>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
@@ -594,7 +525,7 @@ export default function Home() {
               variants={fadeInUp}
             >
               <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                <Store className="text-white w-10 h-10" />
+                <ShoppingBag className="text-white w-10 h-10" />
               </div>
               <h3 className="font-semibold text-xl mb-4 text-center">Retail Travel</h3>
               <p className="text-gray-600 text-center">Consumer-focused travel services and retail operations management expertise</p>
@@ -627,7 +558,7 @@ export default function Home() {
               variants={fadeInUp}
             >
               <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                <MapPin className="text-white w-10 h-10" />
+                <Map className="text-white w-10 h-10" />
               </div>
               <h3 className="font-semibold text-xl mb-4 text-center">Escorted Tours</h3>
               <p className="text-gray-600 text-center">Guided tour operations with cultural expertise and guest experience focus</p>
