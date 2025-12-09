@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import BackToTop from '@/components/BackToTop';
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -876,4 +877,7 @@ export default function Home() {
       </footer>
     </div>
   );
+  
+      {/* Back to Top Button */}
+      <BackToTop />
 }
