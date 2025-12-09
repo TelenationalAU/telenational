@@ -157,3 +157,400 @@
 .to-cream\/20 {
   --tw-gradient-to: hsl(48, 89%, 85%, 0.2) var(--tw-gradient-to-position);
 }
+
+/* =================================================================
+   COMPREHENSIVE WEBSITE ENHANCEMENTS - December 2025
+================================================================= */
+
+/* Advanced Animations */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 165, 0, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(255, 165, 0, 0.6); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Animation Classes */
+.animate-slide-left { animation: slideInLeft 0.8s ease-out forwards; }
+.animate-slide-right { animation: slideInRight 0.8s ease-out forwards; }
+.animate-scale { animation: scaleIn 0.6s ease-out forwards; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-shake { animation: shake 0.5s; }
+.animate-spin { animation: spin 1s linear infinite; }
+
+/* Staggered Delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+
+/* Enhanced Hover Effects */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: linear-gradient(135deg, var(--gold), hsl(32, 95%, 50%));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  animation: float 3s ease-in-out infinite;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Enhanced Card Styles */
+.card-premium {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--soft-blue), var(--gold));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card-premium:hover::before {
+  transform: scaleX(1);
+}
+
+.card-premium:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+/* Glass Morphism */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--navy), var(--soft-blue), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), white);
+  border-left: 4px solid var(--gold);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 0.75rem;
+}
+
+.testimonial-card::after {
+  content: '\201C';
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  font-size: 8rem;
+  color: rgba(37, 99, 235, 0.05);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.testimonial-card:hover {
+  transform: translateX(10px);
+  box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-left-width: 6px;
+}
+
+/* Form Input Enhancements */
+.input-enhanced {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.input-enhanced:focus {
+  border-color: var(--soft-blue);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+  background: white;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.input-enhanced.error {
+  border-color: #ef4444;
+  animation: shake 0.5s;
+}
+
+.input-enhanced.success {
+  border-color: #10b981;
+}
+
+/* Loading States */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.5rem;
+}
+
+.spinner {
+  border: 3px solid rgba(255, 165, 0, 0.1);
+  border-top: 3px solid var(--gold);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--soft-blue));
+  transform-origin: 0%;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+/* Success/Error Messages */
+.message-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slideInRight 0.5s ease-out;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+.message-error {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slideInRight 0.5s ease-out;
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+}
+
+/* Tooltip */
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.95);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.tooltip-wrapper:hover .tooltip-content {
+  opacity: 1;
+  visibility: visible;
+  bottom: 135%;
+}
+
+/* Badge Styles */
+.badge-gold {
+  background: linear-gradient(135deg, var(--gold), hsl(32, 95%, 55%));
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: pulseGlow 2s infinite;
+}
+
+.badge-blue {
+  background: var(--soft-blue);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Parallax Effect */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--navy);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid var(--soft-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .testimonial-card::after {
+    font-size: 4rem;
+  }
+}
+
+/* Print */
+@media print {
+  .back-to-top,
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+}
