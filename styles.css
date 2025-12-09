@@ -1,12 +1,9 @@
 /* CSS Variables */
 :root {
   /* Colors */
-  --navy: #1e3a8a;
-  --soft-blue: #3b82f6;
-  --gold: #f59e0b;
-  --white: #ffffff;
-  --gray-50: #f9fafb;
-  --gray-100: #f3f4f6;
+  --navy: #0f172a; --soft-blue: #3b82f6;
+  --soft-blue: #2563eb;  --white: #ffffff;
+  --gold: #f59e0b;  --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
   --gray-300: #d1d5db;
   --gray-600: #4b5563;
@@ -330,14 +327,14 @@ img {
   cursor: pointer;
   transition: all 0.3s ease;
   transform: translateY(0);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .hero-button:hover {
   background: rgba(245, 158, 11, 0.9);
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 0 30px rgba(245, 158, 11, 0.4);}
 
 .scroll-indicator {
   position: absolute;
@@ -771,12 +768,12 @@ img {
   border-radius: 1rem;
   transition: all 0.3s ease;
   border: 1px solid var(--gray-200);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .expertise-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);}
 
 .expertise-icon {
   width: 5rem;
