@@ -245,6 +245,72 @@ img {
   line-height: 1.2;
 }
 
+/* Cruise Line Partners Section */
+.cruise-partners {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+  }
+
+.cruise-partners-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+.cruise-partners-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+.cruise-partners-header h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+
+.cruise-partners-header p {
+    font-size: 1.1rem;
+    color: var(--gray-700);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+.cruise-partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: center;
+  }
+
+.cruise-partner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+.cruise-partner-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+.cruise-partner-item img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+.cruise-partner-item:hover img {
+    filter: grayscale(0%);
+  }
+
 /* Extra Talents Section */
 .extra-talents {
   margin-top: 1.5rem;
