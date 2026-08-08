@@ -1,10 +1,11 @@
 {
   "buildCommand": "echo 'No build needed - static files ready'",
   "outputDirectory": "./",
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/((?!\\.well-known/).*)",
-      "destination": "/index.html"
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
