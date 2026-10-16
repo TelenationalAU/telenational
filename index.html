@@ -1,3 +1,11 @@
+Here is the complete replacement `index.html`, ready to copy and paste into GitHub. It includes both cruise-line logo sections, your existing content, affiliate links and contact form, with the inline JavaScript commands removed.
+
+Click Copy at the top of the code block, then replace the entire contents of your existing `index.html`.
+
+Important: This version must be used with the updated `script.js` we discussed, which handles all three buttons.
+
+```
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +18,23 @@
     <meta name="description" content="Rodney & Nuch Pattison - Trusted advisors with decades of international experience in cruise logistics, group touring, and travel operations. Global leaders in travel industry with 30+ years combined expertise.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://telenational.com.au/">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23001e3c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolygon points='16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88'/%3E%3C/svg%3E">
     <link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23001e3c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolygon points='16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88'/%3E%3C/svg%3E">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Global Leaders in Travel, Tours & Logistics - Rodney & Nuch Pattison">
     <meta property="og:description" content="Trusted advisors with decades of international experience in cruise logistics, group touring, and travel operations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://telenational.com.au/">
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css?v=2025012501">
-    
+
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
@@ -45,37 +53,38 @@
     <section class="hero-banner">
         <div class="hero-banner-overlay"></div>
         <div class="hero-banner-content">
-      <h1 class="hero-banner-title">Trusted Travel Logistics for Cruise Lines and Tour Operators</h1>
-                  <p class="hero-banner-subtitle">We support cruise lines and tour companies with fast, reliable passenger logistics in Australia. You get smooth operations, less stress and a team with 20 plus years of hands on experience.</p><button class="hero-banner-button" onclick="scrollToContact()">Book a Free 15-min Call</button>
+            <h1 class="hero-banner-title">Trusted Travel Logistics for Cruise Lines and Tour Operators</h1>
+            <p class="hero-banner-subtitle">We support cruise lines and tour companies with fast, reliable passenger logistics in Australia. You get smooth operations, less stress and a team with 20 plus years of hands on experience.</p>
+            <button class="hero-banner-button">Book a Free 15-min Call</button>
         </div>
     </section>
 
+    <!-- Cruise Line Partners -->
+    <div class="cruise-partners">
+        <div class="cruise-partners-container">
+            <div class="cruise-partners-header">
+                <h2>Established partnerships with the world's leading cruise operators</h2>
+                <p>Built through decades of successful collaboration and operational excellence</p>
+            </div>
+            <div class="cruise-partners-grid">
+                <div class="cruise-partner-item"><img src="assets/AZAMARA_1753415316391.png" alt="Azamara"></div>
+                <div class="cruise-partner-item"><img src="assets/CARNIVAL_1753415316398.png" alt="Carnival"></div>
+                <div class="cruise-partner-item"><img src="assets/CRYSTAL_1753415316398.png" alt="Crystal Cruises"></div>
+                <div class="cruise-partner-item"><img src="assets/CUNARD_1753415316398.png" alt="Cunard"></div>
+                <div class="cruise-partner-item"><img src="assets/HOLLAND AMERICA_1753415316399.png" alt="Holland America"></div>
+                <div class="cruise-partner-item"><img src="assets/NORWEGIAN_1753415316399.png" alt="Norwegian Cruise Line"></div>
+                <div class="cruise-partner-item"><img src="assets/OCEANIA CRUISES_1753415316399.png" alt="Oceania Cruises"></div>
+                <div class="cruise-partner-item"><img src="assets/P&O AUSTRALIA_1753415316399.jpg" alt="P&O Australia"></div>
+                <div class="cruise-partner-item"><img src="assets/P%26O%20UK_1753415316399.jpeg" alt="P&O UK"></div>
+                <div class="cruise-partner-item"><img src="assets/PRINCESS CRUISES_1753415316399.png" alt="Princess Cruises"></div>
+                <div class="cruise-partner-item"><img src="assets/REGENT CRUISES_1753415316399.png" alt="Regent Cruises"></div>
+                <div class="cruise-partner-item"><img src="assets/SEABOURN_1753415316400.png" alt="Seabourn"></div>
+                <div class="cruise-partner-item"><img src="assets/SILVERSEA_1753415316400.png" alt="Silversea"></div>
+                <div class="cruise-partner-item"><img src="assets/VIKING_1753415316400.png" alt="Viking Cruises"></div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Cruise Line Partners -->
-        <div class="cruise-partners">
-                    <div class="cruise-partners-container">
-                                    <div class="cruise-partners-header">
-                                                        <h2>Established partnerships with the world's leading cruise operators</h2>
-                                                        <p>Built through decades of successful collaboration and operational excellence</p>
-                                                    </div>
-                                    <div class="cruise-partners-grid">
-                                                        <div class="cruise-partner-item"><img src="assets/AZAMARA_1753415316391.png" alt="Azamara"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/CARNIVAL_1753415316398.png" alt="Carnival"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/CRYSTAL_1753415316398.png" alt="Crystal Cruises"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/CUNARD_1753415316398.png" alt="Cunard"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/HOLLAND AMERICA_1753415316399.png" alt="Holland America"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/NORWEGIAN_1753415316399.png" alt="Norwegian Cruise Line"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/OCEANIA CRUISES_1753415316399.png" alt="Oceania Cruises"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/P&O AUSTRALIA_1753415316399.jpg" alt="P&O Australia"></div>
-                <div class="cruise-partner-item"><img src="assets/P%26O%20UK_1753415316399.jpeg" alt="P&O UK"></div>                                                                                             " alt="P&O UK"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/PRINCESS CRUISES_1753415316399.png" alt="Princess Cruises"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/REGENT CRUISES_1753415316399.png" alt="Regent Cruises"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/SEABOURN_1753415316400.png" alt="Seabourn"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/SILVERSEA_1753415316400.png" alt="Silversea"></div>
-                                                        <div class="cruise-partner-item"><img src="assets/VIKING_1753415316400.png" alt="Viking Cruises"></div>
-                                                    </div>
-                                </div>
-                </div>
     <!-- Affiliate Partners Bar -->
     <div class="affiliate-bar">
         <div class="affiliate-container">
@@ -132,7 +141,7 @@
         <div class="hero-content">
             <h1 class="hero-title">Global Leaders in Travel, Tours & Logistics</h1>
             <h2 class="hero-subtitle">Rodney & Nuch Pattison – Trusted advisors with decades of international experience in cruise logistics, group touring, and travel operations.</h2>
-            <button class="hero-button" onclick="scrollToContact()">Get in Touch</button>
+            <button class="hero-button">Get in Touch</button>
         </div>
         <div class="scroll-indicator">
             <i data-lucide="chevron-down" class="scroll-icon"></i>
@@ -186,38 +195,38 @@
                 <div class="expertise-underline"></div>
                 <h4 class="expertise-intro">Decades of hands-on leadership across every major sector of the travel industry.</h4>
             </div>
-            
+
             <div class="expertise-grid">
                 <div class="expertise-card" data-aos="fade-up" data-aos-delay="0">
                     <i data-lucide="briefcase" class="expertise-icon"></i>
                     <h3>Corporate Travel</h3>
                     <p>Strategic programme design and cost-optimised, enterprise-grade travel management.</p>
                 </div>
-                
+
                 <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
                     <i data-lucide="shopping-bag" class="expertise-icon"></i>
                     <h3>Retail Travel</h3>
                     <p>High-touch consumer service and frontline retail expertise.</p>
                 </div>
-                
+
                 <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
                     <i data-lucide="users" class="expertise-icon"></i>
                     <h3>Group Travel</h3>
                     <p>Seamless logistics for incentive groups, conferences, and large-scale movements.</p>
                 </div>
-                
+
                 <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
                     <i data-lucide="plane" class="expertise-icon"></i>
                     <h3>Airline Operations</h3>
                     <p>Deep operational know-how spanning ground handling, IROP response, and network planning support.</p>
                 </div>
-                
+
                 <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
                     <i data-lucide="map" class="expertise-icon"></i>
                     <h3>Escorted Tours</h3>
                     <p>Culturally rich, end-to-end guided tour design and execution.</p>
                 </div>
-                
+
                 <div class="expertise-card" data-aos="fade-up" data-aos-delay="500">
                     <i data-lucide="ship" class="expertise-icon"></i>
                     <h3>Cruise Logistics</h3>
@@ -277,8 +286,6 @@
             </div>
         </div>
     </section>
-
-
 
     <!-- Cruise Lines Section -->
     <section id="cruise-lines" class="cruise-section">
@@ -374,10 +381,10 @@
                 <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
                     <!-- Web3Forms Access Key -->
                     <input type="hidden" name="access_key" value="197c8bd0-8c47-42ab-80b0-9a5dcf3b6565">
-                    
+
                     <!-- Honeypot Spam Protection -->
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    
+
                     <!-- Form Fields -->
                     <div class="form-row">
                         <div class="form-group">
@@ -402,14 +409,14 @@
                         <i data-lucide="send" class="button-icon"></i>
                     </button>
                 </form>
-                
+
                 <!-- Success Message -->
                 <div id="success-message" class="success-message hidden">
                     <div class="success-content">
                         <i data-lucide="check-circle" class="success-icon"></i>
                         <h3>Message Sent Successfully!</h3>
                         <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
-                        <button onclick="resetForm()" class="reset-button">Send Another Message</button>
+                        <button class="reset-button">Send Another Message</button>
                     </div>
                 </div>
             </div>
@@ -427,3 +434,7 @@
     <script src="script.js?v=2025012501"></script>
 </body>
 </html>
+
+```
+
+Once you've pasted and committed it, tell me Done. We'll then check the buttons and contact form before changing any further security settings.
