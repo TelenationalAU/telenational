@@ -47,7 +47,7 @@ function initializeButtons() {
 
     // Handle reset button
     const resetButtons = document.querySelectorAll(
-        '[onclick="resetForm()"]'
+        '.reset-button'
     );
 
     resetButtons.forEach(function (button) {
@@ -136,9 +136,7 @@ function initializeContactForm() {
                 form.style.display = 'none';
 
                 if (successMessage) {
-
                     successMessage.classList.remove('hidden');
-
                 }
 
                 // Refresh Lucide icons
@@ -197,10 +195,22 @@ function resetForm() {
 
     form.style.display = 'flex';
 
+    // Restore the submit button after a successful submission
+    const submitButton = form.querySelector('.submit-button');
+
+    if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.innerHTML =
+            'Send Message <i data-lucide="send" class="button-icon"></i>';
+    }
+
     if (successMessage) {
-
         successMessage.classList.add('hidden');
+    }
 
+    // Refresh icons
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
     }
 
 }
@@ -255,9 +265,7 @@ function showToast(message, type = 'success') {
     const toastIcon = toast.querySelector('.toast-icon');
 
     if (toastMessage) {
-
         toastMessage.textContent = message;
-
     }
 
     if (toastIcon) {
@@ -292,9 +300,7 @@ function showToast(message, type = 'success') {
         toast.classList.remove('show');
 
         setTimeout(function () {
-
             toast.classList.add('hidden');
-
         }, 300);
 
     }, 5000);
@@ -308,6 +314,10 @@ function showToast(message, type = 'success') {
 
 function initializeScrollAnimations() {
 
+    if (!('IntersectionObserver' in window)) {
+        return;
+    }
+
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -318,9 +328,7 @@ function initializeScrollAnimations() {
         entries.forEach(function (entry) {
 
             if (entry.isIntersecting) {
-
                 entry.target.classList.add('animate-fadeInUp');
-
             }
 
         });
@@ -333,9 +341,7 @@ function initializeScrollAnimations() {
     );
 
     animateElements.forEach(function (element) {
-
         observer.observe(element);
-
     });
 
     // Expertise cards with staggered animation
@@ -541,9 +547,7 @@ function addRippleEffect(button) {
         button.appendChild(ripple);
 
         setTimeout(function () {
-
             ripple.remove();
-
         }, 600);
 
     });
@@ -562,9 +566,7 @@ function initializeRippleEffects() {
     );
 
     buttons.forEach(function (button) {
-
         addRippleEffect(button);
-
     });
 
 }
